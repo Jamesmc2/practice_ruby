@@ -27,35 +27,22 @@ item3 = {
 #p "The #{item3[:name]} is #{item3[:color]} and costs $#{item3[:price]}. We have #{item3[:quantity]} in stock."
 
 class Item
-  def initialize(name, color, price, quantity)
-    @name = name
-    @color = color
-    @price = price
-    @quantity = quantity
+  def initialize(input_options)
+    @name = input_options[:name]
+    @color = input_options[:color]
+    @price = input_options[:price]
+    @quantity = input_options[:quantity]
   end
 
-  def name
-    @name
-  end
-
-  def color
-    @color
-  end
-
-  def price
-    @price
-  end
-
-  def quantity
-    @quantity
-  end
+  attr_reader :name, :color, :price, :quantity
+  attr_writer :name, :color, :price, :quantity
 
   def print_info
     p "The #{name} is #{color} and costs $#{price}. We have #{quantity} in stock."
   end
 end
 
-class_item1 = Item.new("basketball", "orange", 10, 50)
+class_item1 = Item.new(name: "basketball", color: "orange", price: 10, quantity: 50)
 p class_item1
 p class_item1.name
 p class_item1.price
