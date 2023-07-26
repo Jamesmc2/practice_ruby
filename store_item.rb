@@ -45,6 +45,8 @@ end
 class_item1 = Item.new(name: "basketball", color: "orange", price: 10, quantity: 50)
 p class_item1
 p class_item1.name
+class_item1.name = "football"
+class_item1.color = "brown"
 p class_item1.price
 p class_item1.quantity
 class_item1.print_info
