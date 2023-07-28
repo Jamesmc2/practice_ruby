@@ -1,0 +1,10 @@
+first add the two rolls together to get the score for one frame
+
+create a method that accepts 2 rolls and adds them together
+
+create a sum variable that keeps track of total score each time a new roll comes through
+
+create a method that returns the sum variable when called upon
+
+start figuring out spares/strikes
+
